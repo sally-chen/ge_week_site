@@ -2,13 +2,58 @@
 <html>
 <head>
   <title>GeWeek</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+   <!--<meta charset="utf-8"> -->
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
 </head>
 <body>
+<nav class="navbar-default navbar-fixed-top shadow">
+  <div class="container-fluid">
+    
+    <div class="navbar-header" >
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand-cus" href="#"><%= image_tag('logo_orange.png',:alt => "Brand", :class => "img-responsive ") %></a>
+    </div>
+
+     
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav navbar-right" >
+        <!--<li class="active"><a href="#">Link <span class="sr-only">(current)</span></a></li>-->
+        <li><%= link_to "Our Team", team_path %></li>
+        <li><%= link_to "Our Partners", partners_path %></li>
+        
+        
+      </ul>
+     
+    
+      
+        
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+
 
 <%= yield %>
+
+<div class="footer or_bg">
+  <div class = "row row-centered  ">
+    <div class = "col-centered  col-md-1 col-xs-3 image-wraper">
+      <%= image_tag('email.png', :class => "img-responsive") %>
+     
+    </div>  
+    <div class = "col-centered  col-md-1 col-xs-3 image-wraper">
+      <%= image_tag('facebook.png' , :class => "img-responsive") %>
+    </div>
+  </div>
 
 </body>
 </html>

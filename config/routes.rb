@@ -1,4 +1,9 @@
 Rails.application.routes.draw do
+  root 'static_pages#index'
+  get 'partners'=>'static_pages#partners'
+  get 'team'=>'static_pages#team'
+  
+
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
 
