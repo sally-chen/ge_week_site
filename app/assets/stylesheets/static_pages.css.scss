@@ -1,6 +1,49 @@
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+// @font-face{
+// 	font-family: 'open_sansregular';
+//     src: url('../font/opensans-webfont.woff') format('woff');
+// }
+
+// @font-face{
+// 	font-family: 'segoepr';
+//     src: url('../font/SegoePrint.woff') format('woff');
+// }
+
+
+
+@font-face {
+    font-family: 'open_sansregular';
+    
+    src: asset-url('opensans-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+*{
+
+	font-family: 'open_sansregular';
+}
+
+.homepg_txt{
+  margin-top:300px;
+  text-shadow: 3px 3px 10px black;
+  font-family: 'open_sansregular';
+  
+}
+
+.homepg_txt p:nth-child(1){
+  font-size: 30px;
+  color:white;
+  
+}
+.homepg_txt p:nth-child(2){
+  font-size: 50px;
+  color:#e6a65f;
+  
+}
+
 .center{
   
   margin: 0px auto;
@@ -33,6 +76,11 @@
 .white_bg{
   
   background:#ffffff;
+}
+
+.or_bg{
+  background-color: #e6a65f
+  
 }
 
 .blue_bg{
@@ -184,7 +232,7 @@
 
 .goal_font{
   text-align:center;
-  font-size:16px;
+  font-size:14px;
   color:black;
 }
 .goal{
@@ -208,7 +256,7 @@
 /*speaker series*/
 .speaker{
 	
-	height:600px;
+	
 	text-align: center;
 	
 	
@@ -220,6 +268,12 @@
 	margin:0px auto 30px;
 	background:#e6a65f
 }
+.line_white{
+	height:2px;
+	width:100px;
+	margin:0px auto 30px;
+	background:white
+}
 
 .speaker img{
 	width:60%;
@@ -227,10 +281,7 @@
 	
 }
 /*footer*********************/
-.or_bg{
-  background-color: #e6a65f
-  
-}
+
 .footer{
   height:100px;
   
@@ -378,6 +429,31 @@ header {
 
 
 @media(max-width: 768px) {
+  
+  .hm_bg{
+    	background-image: image-url("hm_phone.png") ;
+    	height:500px;
+    
+  }
+  
+  .homepg_txt{
+  margin-top:100px;
+  
+}
+
+.homepg_txt p:nth-child(1){
+  font-size: 18px;
+  
+}
+.homepg_txt p:nth-child(2){
+  font-size: 30px;
+ 
+}
+
+.goal_bg{
+  height:750px;
+  
+}
 
     #calendar .weekdays, #calendar .other-month, #calendar .period,  #calendar .days{
         display: none;
@@ -406,5 +482,23 @@ header {
 
 .team_title{
   color: #e6a65f;
+  
+}
+
+.speaker-height{
+  height:500px;
+  
+}
+
+.speaker_img{
+  margin: 0 auto;
+  width:150px;
+  height:220px;
+  
+  
+}
+.speaker_img img{
+  width:100%;
+  height:auto;
   
 }

@@ -1,5 +1,9 @@
 <!--  home page  -->
 <div class = "row pic_indent hm_bg ">
+  <div class="homepg_txt col-md-offset-1 col-xs-offset-1 col-xs-7">
+  <p>EWB U OF T, EWH AND CGEN PRESENTS</p>
+  <p>GLOBAL ENGINEERING WEEK</p>
+  </div>
   
 </div>
 
@@ -8,7 +12,7 @@
 <div class = "row goal_bg">
   
     
-       <div class = "col-md-8 col-xs-8 col-md-offset-2 col-xs-offset-2">
+       <div class = "col-md-8 col-xs-10 col-md-offset-2 col-xs-offset-1">
         <h1 style="text-align:center; color: black;margin-top:100px">Our Goal</h1>
         <div class = "line"> </div>
         <p class="goal_font"> The challenges faced by our generation have become increasingly complex, multifaceted and multinational. It is therefore imperative for engineering students to develop the necessary skills to successfully tackle global problems. Doing so requires an exposure to and understanding of global engineering knowledge and applications.</p>
@@ -50,7 +54,7 @@
   <div class = "col-md-10 col-md-offset-1 col-xs-offset-1 col-sm-10 col-xs-10 ">
 <div id="calendar-wrap">
             <header>
-                 <h1 style="text-align:center; color: black;margin-top:100px">schedule</h1>
+                 <h1 style="text-align:center; color: black;margin-top:100px">Schedule</h1>
                  <div class = "line"> </div>
             </header>
             <div id="calendar">
@@ -72,16 +76,16 @@
 
                 <ul class="days">
                   <li class="day period" style="background: #1b96b5">
-                        <h5 style="color: white; line-height:140px">Morning</h5>                     
+                        <h5 style="color: white; line-height:90px">Morning</h5>                     
                     </li>
                     <li class="day">
                            <div class="event">
                             <div class="event-desc">
                                 GE Week Fair
                             </div>
-                            <div class="event-time">
-                                6:00pm to 8:30pm
-                            </div>
+                            <!--<div class="event-time">-->
+                            <!--    6:00pm to 8:30pm-->
+                            <!--</div>-->
                         </div>                     
                     </li>
                     <li class="day">
@@ -98,12 +102,12 @@
                         
                     </li>
                     <li class="day">
+                      
                       <div class="event">
-                            <div class="event-desc">
-                                EWB Case Competition
+                           <div class="event-desc">
+                                EWB Case Competition Keynote by Prof. Paul Cadario
+                            </div>  
                             </div>
-                            
-                        </div> 
                         
                                                
                     </li>
@@ -114,7 +118,7 @@
 
                 <ul class="days">
                   <li class="day period" style="background: #1b96b5">
-                        <h5 style="color: white;line-height:140px">Afternoon</h5>
+                        <h5 style="color: white;line-height:90px">Afternoon</h5>
                                        
                     </li>
                     <li class="day">
@@ -140,11 +144,11 @@
                         <div class="event">
                           
                             <div class="event-desc">
-                                <%= link_to "Graduate Student Research Fair", root_path(:anchor => "#grad") %>
+                              Graduate Student Research Fair
                             </div>
-                            <div class="event-time">
-                                6:00pm to 8:30pm
-                            </div>
+                            <!--<div class="event-time">-->
+                            <!--    6:00pm to 8:30pm-->
+                            <!--</div>-->
                             </a>
                         </div>                      
                     </li>
@@ -162,7 +166,7 @@
 
                 <ul class="days">
                   <li class="day period" style="background: #1b96b5">
-                        <h5 style="color: white;line-height:140px">Evening</h5>
+                        <h5 style="color: white;line-height:90px">Evening</h5>
                                        
                     </li>
                     <li class="day">
@@ -183,22 +187,18 @@
                             <div class="event-desc">
                                 Speaker - Prof. Amekuzdi-Kennedy (Georgia Tech)
                             </div>
-                            <div class="event-time">
-                                6:00pm to 8:30pm
-                            </div>
+                            <!--<div class="event-time">-->
+                            <!--    6:00pm to 8:30pm-->
+                            <!--</div>-->
                         </div>                      
                     </li>
                     <li class="day">
-                       <div class="event">
-                           <div class="event-desc">
-                                EWB Case Competition
-                            </div>  
-                            </div>  
+                       
                             
                     </li>
                     
                 </ul>
-  
+  <!-----mobile------>
                   
                  <ul>
                    <li class="weekdays_mobile">Monday March 13</li>
@@ -207,9 +207,9 @@
                             <div class="event-desc">
                                 GE Week Fair
                             </div>
-                            <div class="event-time">
-                                6:00pm to 8:30pm
-                            </div>
+                            <!--<div class="event-time">-->
+                            <!--    6:00pm to 8:30pm-->
+                            <!--</div>-->
                     </div>
                     </li>
                    <li class="weekdays_mobile">Wednesday March 15</li>
@@ -219,14 +219,52 @@
                             <div class="event-desc">
                                 Speaker - Prof. Amos Winter (MIT)
                             </div>
-                            <div class="event-time">
-                                11 am to 1 pm
-                            </div> 
+                            <!--<div class="event-time">-->
+                            <!--    11 am to 1 pm-->
+                            <!--</div> -->
                       </div>
                     </li>
                    <li class="weekdays_mobile">Friday March 17</li>
+                   <li class="event_mobile">
+                   <div class="event">
+                          
+                            <div class="event-desc">
+                              Graduate Student Research Fair
+                                
+                            </div>
+                            <!--<div class="event-time">-->
+                            <!--    6:00pm to 8:30pm-->
+                            <!--</div>-->
+                            </a>
+                        </div>
+                     </li>   
+                     <li class="event_mobile">
+                        <div class="event">
+                            <div class="event-desc">
+                                Speaker - Prof. Amekuzdi-Kennedy (Georgia Tech)
+                            </div>
+                            <!--<div class="event-time">-->
+                            <!--    6:00pm to 8:30pm-->
+                            <!--</div>-->
+                        </div>
+                        </li>
                    <li class="weekdays_mobile">Saturday March 18</li>
-                   <li class="weekdays_mobile">Saturday March 25</li>
+                   <li class="event_mobile">
+                     <div class="event">
+                           <div class="event-desc">
+                                EWB Case Competition Keynote by Prof. Paul Cadario
+                            </div>  
+                            </div>
+                    </li>
+                   
+                   </li>
+                   <li class="event_mobile">
+                    <div class="event">
+                           <div class="event-desc">
+                                EWB Case Competition
+                            </div>  
+                            </div>
+                    </li>
                  </ul>
                        
                
@@ -258,36 +296,44 @@
   <p style="font-size: 15px; text-align:center; color: black; margin-bottom: 40px">Global Engineering Week was put together by a group of students passionate about global engineering and engineering’s role in developing sustainable solutions to pressing social and global problems. </p>
   </div>
 </div>
-<div class = "row row-centered  banner_margin_bot gray_bg">
+<div class = "row row-centered banner_margin_bot gray_bg">
   
   
-  <div class = "col-centered col-md-3 col-sm-10 col-xs-10 speaker">
+  <div class = "col-md-offset-3 col-xs-offset-1 col-md-2 col-md-offset-0 col-sm-10 col-xs-10 speaker-height">
+    <div class="speaker_img">
     <%= image_tag('amos_winter.png')%>
+    </div>
     <h3>Prof. Amos Winter</h3>
     <h5 class="team_title"><i>Director of Global Engineering, MIT</i></h5>
-		 <a href="#" class="btn btn-warning" role="button">Register</a>
+		 <a href="https://www.eventbrite.ca/e/professor-amos-winter-lunch-and-learn-tickets-32561730011?ref=estw" class="btn btn-warning" role="button">Register</a>
    
   </div>
-  <div class = "col-centered col-md-3 col-sm-10 col-xs-10 speaker">
+  <div class = "col-md-2 col-sm-10 col-xs-offset-1 col-md-offset-0 col-xs-10 speaker-height">
+    <div class="speaker_img">
     <%= image_tag('kennedy.png')%>
+    </div>
     <h3>Prof. Adjo Amekuzdi-Kennedy</h3>
    <h5 class="team_title"><i>Associate Chair of Global Engineering, Georgia Tech</i></h5>
-		 <a href="#" class="btn btn-warning" role="button">Register</a>
+		 <!--<a href="#" class="btn btn-warning" role="button">Register</a>-->
    
   </div>
-  <div class = "col-centered col-md-3 col-sm-10 col-xs-10 speaker">
+  <div class = " col-md-2 col-sm-10 col-xs-offset-1 col-md-offset-0 col-xs-10 speaker-height">
+    <div class="speaker_img">
+      
     <%= image_tag('paul_cadario.png')%>
+    
+    </div>
     <h3>Prof. Paul Cadario</h3>
     <h5 class="team_title"><i>Board Member, Munk School of Global Affairs,School of Public Policy, and Faculty of Applied Science and Engineering</i></h5>
     
-   <a href="#" class="btn btn-warning" role="button">Register</a>
+   <!--<a href="#" class="btn btn-warning" role="button">Register</a>-->
   </div>
 </div>
 
 
 <!--  courses  -->
 <a name="courses"></a>
-<div class = "row row-centered  blue_bg banner_margin_bot">
+<div class = "row row-centered  or_bg banner_margin_bot">
   <div class = "col-md-offset-2 col-xs-offset-1 col-md-4 col-sm-10 col-xs-10 ">
     <div class="banner_image_wraper center">
       <%= image_tag('Course Involvement Vector.png')%>
@@ -295,7 +341,7 @@
   </div> 
    <div class = " col-md-4 col-xs-offset-1 col-md-offset-0 col-sm-10 col-xs-10 team_each alignment_change">
       <h1 style="text-align:center; color: black;margin-top:100px">Curriculum Involvement </h1>
-    <div class = "line"> </div>
+    <div class = "line_white"> </div>
       <p>We have partnered with faculty to introduce real-life global poverty case studies, examples, and readings into the engineering curriculum during GE Week, ranging from energy policy to engineering design. Not only will this prompt discussions about innovative solutions to engineering and business issues that arise in the context of global poverty, but it will give students an outlet to apply their curriculum in solving these problems. 
   		 </p>
   	</div>
@@ -304,26 +350,26 @@
 
 
 <!--  grad student fair  -->
-<% link_to('', {}, {:name => 'grad'}) %>
+<!--<% link_to('', {}, {:name => 'grad'}) %>-->
 
-<div class = "row row-centered  banner_margin_bot or_bg">
-  <div class = "col-md-offset-2 col-xs-offset-1 col-md-4 col-sm-10 col-xs-10 ">
-    <div class="banner_image_wraper center">
-      <%= image_tag('Grad Student Fair Vector.png')%>
-    </div>
-  </div> 
-   <div class = " col-md-4 col-xs-offset-1 col-md-offset-0 col-sm-10 col-xs-10 team_each alignment_change">
-      <h1 style="text-align:center; color: black;margin-top:100px">Speaker Series</h1>
-    <div class = "line"> </div>
-      <p>Malik is a fourth year Engineering Science student at the University of Toronto and is the founder of the Global Engineering Week. After three years as Vice President of Engineers Without Borders and working with faculty to introduce real-life global poverty case studies in their courses, he realized that curriculum-based discussions were only one part of the equation to disseminate the requisite knowledge and skillsets needed to help students become global engineers. This understanding led him to found the Global Engineering Week, which he believes is a will not only inspire students to expand their horizons and look beyond traditional engineering roles, but provide them will the skills needed to tackle the most complex global challenges.
-  		 </p>
-  	</div>
-</div>
+<!--<div class = "row row-centered  banner_margin_bot or_bg">-->
+<!--  <div class = "col-md-offset-2 col-xs-offset-1 col-md-4 col-sm-10 col-xs-10 ">-->
+<!--    <div class="banner_image_wraper center">-->
+<!--      <%= image_tag('Grad Student Fair Vector.png')%>-->
+<!--    </div>-->
+<!--  </div> -->
+<!--   <div class = " col-md-4 col-xs-offset-1 col-md-offset-0 col-sm-10 col-xs-10 team_each alignment_change">-->
+<!--      <h1 style="text-align:center; color: black;margin-top:100px">Speaker Series</h1>-->
+<!--    <div class = "line"> </div>-->
+<!--      <p>Malik is a fourth year Engineering Science student at the University of Toronto and is the founder of the Global Engineering Week. After three years as Vice President of Engineers Without Borders and working with faculty to introduce real-life global poverty case studies in their courses, he realized that curriculum-based discussions were only one part of the equation to disseminate the requisite knowledge and skillsets needed to help students become global engineers. This understanding led him to found the Global Engineering Week, which he believes is a will not only inspire students to expand their horizons and look beyond traditional engineering roles, but provide them will the skills needed to tackle the most complex global challenges.-->
+<!--  		 </p>-->
+<!--  	</div>-->
+<!--</div>-->
 
 <!--  case competition  -->
 <a name="competition"></a>
 
-<div class = "row row-centered  banner_margin_bot gray_bg">
+<div class = "row row-centered  banner_margin_bot blue_bg">
   <div class = "col-md-offset-2 col-xs-offset-1 col-md-4 col-sm-10 col-xs-10 ">
     <div class="banner_image_wraper center">
       <%= image_tag('Case Competition Vector.png')%>
