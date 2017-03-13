@@ -1,0 +1,86 @@
+import peasy.*; 
+PeasyCam cam; 
+
+int nFrames = 256;
+float phasor = 0.0;
+float phasorInc = 1.0 / (float) nFrames;
+ArrayList lineSegments;
+boolean recordOn = true;
+float r,e;
+
+void setup() {
+  size(500, 500,P3D);
+  cam = new PeasyCam(this, 1000);   
+  cam.setMinimumDistance(1);   
+  cam.setMaximumDistance(2000); 
+  background(255);
+  smooth();
+  lineSegments = new ArrayList();
+  int nLines = 256;
+  r=width/4;
+  e=width/50;
+ 
+  for (int i = 0; i < nLines; i++) {
+    PVector v = getVCoordinates(width / 5, height / 5, height, width / 10, (float) i / (int) nLines * TAU * 2);
+    lineSegments.add(new LineSegment(v.x, v.y, v.z, 200, (float) i / (float) nLines * TWO_PI * -1));
+  }
+}
+ 
+ int n=50, m=20; 
+void draw() {
+
+  noStroke();
+  background(0);
+  stroke(255);
+  strokeWeight(2);
+
+
+  int lsSize = lineSegments.size();
+ 
+  for (int i = 0; i < lsSize; i++) {
+    pushMatrix();
+    float xOffset = 80.0 * (sin(((float) i / (float) lsSize + phasor) * TWO_PI));
+    float yOffset = 80.0 * (cos(((float) i / (float) lsSize + phasor) * TWO_PI));
+    float zOffset = 80.0 * (sin(((float) i / (float) lsSize + phasor) * TWO_PI));
+    translate(xOffset, yOffset,zOffset);
+     
+    LineSegment thisLineSeg = (LineSegment) lineSegments.get(i);
+    thisLineSeg.update();
+    popMatrix();
+  }
+  for (int i=0; i<n; i++) for (int j=0; j<m; j++) {
+    float a= random(500),
+         b=r*cos(PI/n*i), 
+         c=r*sin(PI/n*i)*sin(TWO_PI/m*j), 
+          w=r;
+    float persp=((c+2*r)/4/r+(w+2*r)/4/r);
+    fill(255);
+    sphere(1);
+    translate(b*persp, e*persp, e*persp);
+  }
+} 
+
+
+class LineSegment {
+  float x, y, d, a, z;  
+   
+  LineSegment(float x_, float y_, float z_, float d_, float a_) {
+    x = x_;
+    y = y_;
+    d = d_;
+    a = a_;
+    z = z_;
+  }
+   
+  void update() {
+    float a1 = a + phasor * TWO_PI;
+    float x1 = x + d * cos(a1);
+    float y1 = y + d * sin(a1);
+    float z1 = z + d * sin(a1);
+    line(x, y,z, x1, y1, z1);
+  }
+}
+
+PVector getVCoordinates(float x, float y, float z, float d, float a ) {
+  return new PVector(x + d * cos(a), y + d * sin(a), z+ d* sin(a) );
+}
